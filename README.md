@@ -64,6 +64,12 @@ The default build uses 24 parallel jobs. Override it with `CATHODEROM_BUILD_JOBS
 9. Finish CathodeOS branding, Pixel-inspired original icons, boot animation, wallpapers and About page.
 8. Add reproducible image builds and release artifacts.
 
+## Copyright and attribution
+
+Copyright © 2026 C JacksonTech. CathodeOS branding and CathodeROM-original project materials are copyright by C JacksonTech unless a file states otherwise.
+
+AOSP and all third-party components retain their respective copyrights and licenses. See individual source trees and license files for their applicable terms.
+
 ## License
 
 CathodeROM-specific code is intended to be Apache-2.0 unless a file states otherwise. AOSP and third-party components retain their original licenses.
