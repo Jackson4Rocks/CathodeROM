@@ -7,7 +7,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_x86_64/device.mk)
 
-PRODUCT_DEVICE := cathode_x86_64
+PRODUCT_DEVICE := laptop
 
 $(call inherit-product, device/cathoderom/laptop/vendor/cathoderom/microg/microg.mk)
 
