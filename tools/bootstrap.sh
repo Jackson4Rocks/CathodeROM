@@ -80,7 +80,6 @@ echo "Syncing AOSP and CathodeROM sources..."
   --jobs-checkout="$CHECKOUT_JOBS" \
   --no-interleaved \
   --optimized-fetch \
-  --no-tags
 
 echo
 echo "Bootstrap complete."
