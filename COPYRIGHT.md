@@ -1,6 +1,6 @@
 # Copyright and attribution
 
-Copyright © 2026 C JacksonTech.
+Copyright © 2026 JacksonTech.
 
 CathodeOS branding, original visual assets, and CathodeROM-specific project materials are copyright by C JacksonTech unless a file states otherwise.
 
