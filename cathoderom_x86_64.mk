@@ -7,7 +7,7 @@ $(call inherit-product, device/cathoderom/laptop/device.mk)
 WITH_GMS := true
 
 PRODUCT_NAME := cathoderom_x86_64
-PRODUCT_DEVICE := cathode_x86_64
+PRODUCT_DEVICE := laptop
 PRODUCT_BRAND := CathodeOS
 PRODUCT_MODEL := CathodeOS x86_64 Laptop
 PRODUCT_MANUFACTURER := CathodeOS
