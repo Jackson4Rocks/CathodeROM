@@ -1,0 +1,28 @@
+# Android/AOSP checkout
+/aosp/
+/.repo/
+/.repo/
+/repo/
+
+# Build output
+/out/
+/**/out/
+/build-output/
+/dist/
+/artifacts/
+
+# Local tooling
+/.tools/repo
+/.tools/*.pyc
+/.tools/__pycache__/
+
+# Editor / OS files
+*.swp
+*.swo
+*~
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
