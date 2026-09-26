@@ -12,10 +12,10 @@ export TMPDIR="$TMP_DIR"
 # High-throughput defaults. Use 24 concurrent jobs by default.
 # Override with:
 #   CATHODEROM_SYNC_JOBS=24
-#   CATHODEROM_NETWORK_JOBS=24
+#   CATHODEROM_NETWORK_JOBS=8
 #   CATHODEROM_CHECKOUT_JOBS=24
 SYNC_JOBS="${CATHODEROM_SYNC_JOBS:-24}"
-NETWORK_JOBS="${CATHODEROM_NETWORK_JOBS:-24}"
+NETWORK_JOBS="${CATHODEROM_NETWORK_JOBS:-8}"
 CHECKOUT_JOBS="${CATHODEROM_CHECKOUT_JOBS:-24}"
 
 if (( SYNC_JOBS < 1 || NETWORK_JOBS < 1 || CHECKOUT_JOBS < 1 )); then
@@ -67,7 +67,7 @@ cp "$ROOT/manifest/cathoderom.xml" "$AOSP_DIR/.repo/local_manifests/cathoderom.x
 echo
 echo "HIGH-THROUGHPUT SYNC"
 echo "  Repo jobs       : $SYNC_JOBS"
-echo "  Network jobs    : $NETWORK_JOBS"
+echo "  Network jobs    : $NETWORK_JOBS (rate-limit safe)"
 echo "  Checkout jobs   : $CHECKOUT_JOBS"
 echo "  Superproject    : enabled"
 echo "  Partial clone   : enabled (10 MiB blob filter)"
