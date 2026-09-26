@@ -1,6 +1,6 @@
-# CathodeROM
+# CathodeOS
 
-**CathodeROM** is an Android 16-based operating system for generic x86_64 laptops and PCs.
+**CathodeOS** is an Android 16-based operating system for generic x86_64 laptops and PCs, built from the CathodeROM source project.
 
 The project starts from AOSP and adds a PC-oriented device layer. The goal is a real UEFI-bootable Android image, not a phone GSI transplanted onto a laptop.
 
@@ -11,13 +11,14 @@ This repository is in the bring-up stage.
 - Android base: AOSP 16.0.0 Release 4
 - Target architecture: x86_64
 - Initial product: `cathoderom_x86_64`
+- Services: microG (FOSS Google API compatibility)
 - Boot target: UEFI PC/laptop
 - Hardware bring-up: in progress
 - GPU/audio/Wi-Fi/suspend tuning: not yet complete
 
 ## Build model
 
-The repository is intentionally small. AOSP itself is fetched by Repo, while this repository supplies CathodeROM-specific files through a local manifest.
+The repository is intentionally small. AOSP itself is fetched by Repo, while this repository supplies CathodeOS-specific files through a local manifest.
 
 ```text
 AOSP 16.0.0_r4
@@ -29,7 +30,7 @@ PC kernel / boot integration
 Laptop hardware configuration
       |
       v
-CathodeROM x86_64 image
+CathodeOS x86_64 image
 ```
 
 ## Quick start
@@ -60,6 +61,7 @@ The default build uses 24 parallel jobs. Override it with `CATHODEROM_BUILD_JOBS
 5. Bring up Intel/AMD graphics.
 6. Bring up audio, Wi-Fi, Bluetooth, touchpads, webcams and suspend/resume.
 7. Add a desktop-oriented SystemUI/launcher and laptop power behavior.
+9. Finish CathodeOS branding, Pixel-inspired original icons, boot animation, wallpapers and About page.
 8. Add reproducible image builds and release artifacts.
 
 ## License
