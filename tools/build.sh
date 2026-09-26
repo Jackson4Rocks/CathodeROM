@@ -18,7 +18,7 @@ fi
 
 cd "$AOSP_DIR"
 source build/envsetup.sh
-lunch cathoderom_x86_64-userdebug
+lunch cathoderom_x86_64-trunk_staging-userdebug
 
 echo
 echo "CathodeROM build"
