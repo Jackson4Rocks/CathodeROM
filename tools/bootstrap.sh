@@ -7,12 +7,14 @@ TOOLS_DIR="$ROOT/.tools"
 REPO="$TOOLS_DIR/repo"
 AOSP_TAG="android-16.0.0_r4"
 
-# Maximum-throughput defaults. These intentionally favor speed over desktop
-# responsiveness. Override them only when you want fewer concurrent jobs.
-CPU_COUNT="$(nproc --all)"
-SYNC_JOBS="${CATHODEROM_SYNC_JOBS:-$((CPU_COUNT * 2))}"
-NETWORK_JOBS="${CATHODEROM_NETWORK_JOBS:-$((CPU_COUNT * 2))}"
-CHECKOUT_JOBS="${CATHODEROM_CHECKOUT_JOBS:-$((CPU_COUNT * 2))}"
+# High-throughput defaults. Use 12 concurrent jobs by default.
+# Override with:
+#   CATHODEROM_SYNC_JOBS=16
+#   CATHODEROM_NETWORK_JOBS=16
+#   CATHODEROM_CHECKOUT_JOBS=16
+SYNC_JOBS="${CATHODEROM_SYNC_JOBS:-12}"
+NETWORK_JOBS="${CATHODEROM_NETWORK_JOBS:-12}"
+CHECKOUT_JOBS="${CATHODEROM_CHECKOUT_JOBS:-12}"
 
 if (( SYNC_JOBS < 1 || NETWORK_JOBS < 1 || CHECKOUT_JOBS < 1 )); then
   echo "error: concurrency values must be >= 1" >&2
@@ -25,10 +27,6 @@ if ! command -v git >/dev/null 2>&1; then
 fi
 if ! command -v curl >/dev/null 2>&1; then
   echo "error: curl is required" >&2
-  exit 1
-fi
-if ! command -v nproc >/dev/null 2>&1; then
-  echo "error: nproc is required (usually provided by coreutils)" >&2
   exit 1
 fi
 
@@ -65,14 +63,13 @@ mkdir -p "$AOSP_DIR/.repo/local_manifests"
 cp "$ROOT/manifest/cathoderom.xml" "$AOSP_DIR/.repo/local_manifests/cathoderom.xml"
 
 echo
-echo "MAXIMUM-THROUGHPUT SYNC"
-echo "  CPU threads available : $CPU_COUNT"
-echo "  Repo jobs             : $SYNC_JOBS"
-echo "  Network jobs          : $NETWORK_JOBS"
-echo "  Checkout jobs         : $CHECKOUT_JOBS"
-echo "  Superproject          : enabled"
-echo "  Partial clone         : enabled (10 MiB blob filter)"
-echo "  Tags                  : disabled"
+echo "HIGH-THROUGHPUT SYNC"
+echo "  Repo jobs       : $SYNC_JOBS"
+echo "  Network jobs    : $NETWORK_JOBS"
+echo "  Checkout jobs   : $CHECKOUT_JOBS"
+echo "  Superproject    : enabled"
+echo "  Partial clone   : enabled (10 MiB blob filter)"
+echo "  Tags            : disabled"
 echo
 
 echo "Syncing AOSP and CathodeROM sources..."
@@ -92,8 +89,3 @@ echo "  cd $AOSP_DIR"
 echo "  source build/envsetup.sh"
 echo "  lunch cathoderom_x86_64-userdebug"
 echo "  m -j$(nproc)"
-echo
-echo "Override concurrency with:"
-echo "  CATHODEROM_SYNC_JOBS=<N>"
-echo "  CATHODEROM_NETWORK_JOBS=<N>"
-echo "  CATHODEROM_CHECKOUT_JOBS=<N>"
