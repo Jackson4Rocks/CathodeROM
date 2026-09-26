@@ -10,3 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/board/generic_x86_64/device.mk)
 PRODUCT_DEVICE := cathode_x86_64
 
 $(call inherit-product, vendor/cathoderom/microg/microg.mk)
+
+# CathodeOS branding overlay: keeps AOSP behavior while replacing only
+# product-facing strings/icons for the Settings app.
+PRODUCT_PACKAGE_OVERLAYS += device/cathoderom/laptop/overlay
