@@ -6,6 +6,8 @@ AOSP_DIR="$ROOT/aosp"
 TOOLS_DIR="$ROOT/.tools"
 REPO="$TOOLS_DIR/repo"
 AOSP_TAG="android-16.0.0_r4"
+TMP_DIR="$ROOT/.tmp"
+export TMPDIR="$TMP_DIR"
 
 # High-throughput defaults. Use 12 concurrent jobs by default.
 # Override with:
@@ -30,7 +32,7 @@ if ! command -v curl >/dev/null 2>&1; then
   exit 1
 fi
 
-mkdir -p "$TOOLS_DIR"
+mkdir -p "$TOOLS_DIR" "$TMP_DIR"
 
 if command -v repo >/dev/null 2>&1; then
   REPO_CMD="$(command -v repo)"
