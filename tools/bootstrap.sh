@@ -9,7 +9,7 @@ AOSP_TAG="android-16.0.0_r4"
 TMP_DIR="$ROOT/.tmp"
 export TMPDIR="$TMP_DIR"
 
-# High-throughput defaults. Use 12 concurrent jobs by default.
+# High-throughput defaults. Use 24 concurrent jobs by default.
 # Override with:
 #   CATHODEROM_SYNC_JOBS=24
 #   CATHODEROM_NETWORK_JOBS=24
@@ -48,8 +48,8 @@ fi
 mkdir -p "$AOSP_DIR"
 cd "$AOSP_DIR"
 
-if [[ ! -d "$AOSP_DIR/.repo" ]]; then
-  echo "Initializing AOSP $AOSP_TAG"
+if [[ ! -d "$AOSP_DIR/.repo/repo" ]]; then
+  echo "Initializing/recovering AOSP $AOSP_TAG"
   "$REPO_CMD" init \
     -c \
     -u https://android.googlesource.com/platform/manifest \
