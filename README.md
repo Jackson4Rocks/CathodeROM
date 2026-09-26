@@ -66,7 +66,7 @@ The default build uses 24 parallel jobs. Override it with `CATHODEROM_BUILD_JOBS
 
 ## Copyright and attribution
 
-Copyright © 2026 C JacksonTech. CathodeOS branding and CathodeROM-original project materials are copyright by C JacksonTech unless a file states otherwise.
+Copyright © 2026 JacksonTech. CathodeOS branding and CathodeROM-original project materials are copyright by JacksonTech unless a file states otherwise.
 
 AOSP and all third-party components retain their respective copyrights and licenses. See individual source trees and license files for their applicable terms.
 
