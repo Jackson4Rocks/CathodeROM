@@ -46,10 +46,10 @@ Then enter the AOSP tree and build the first product:
 cd aosp
 source build/envsetup.sh
 lunch cathoderom_x86_64-userdebug
-m -j"$(nproc)"
+./tools/build.sh
 ```
 
-The first bring-up build is expected to require additional kernel/boot work before it becomes a bootable laptop ISO.
+The default build uses 24 parallel jobs. Override it with `CATHODEROM_BUILD_JOBS=<N> ./tools/build.sh`. The first bring-up build is expected to require additional kernel/boot work before it becomes a bootable laptop ISO.
 
 ## Roadmap
 
