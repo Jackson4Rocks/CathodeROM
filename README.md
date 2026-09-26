@@ -2,7 +2,7 @@
 
 **CathodeOS** is an Android 16-based operating system for generic x86_64 laptops and PCs, built from the CathodeROM source project.
 
-The project starts from AOSP and adds a PC-oriented device layer. The goal is a real UEFI-bootable Android image, not a phone GSI transplanted onto a laptop.
+The project starts from AOSP and adds a PC-oriented device layer. The goal is a real UEFI-bootable Android image, not a phone GSI transplanted onto a laptop. CathodeOS keeps the AOSP experience close to stock while layering its own branding, original Pixel-inspired icons, and a PC-focused identity.
 
 ## Project status
 
