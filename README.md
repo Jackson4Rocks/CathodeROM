@@ -46,7 +46,7 @@ Then enter the AOSP tree and build the first product:
 ```bash
 cd aosp
 source build/envsetup.sh
-lunch cathoderom_x86_64-userdebug
+lunch cathoderom_x86_64-trunk_staging-userdebug
 ./tools/build.sh
 ```
 
