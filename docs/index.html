@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07060b">
+  <meta name="description" content="CathodeOS — Android 16, rebuilt for x86_64 laptops and PCs. AOSP-based, PC-focused, and powered by microG.">
+  <title>CathodeOS — Android for PCs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="grid"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav shell">
+      <a class="brand" href="#top" aria-label="CathodeOS home">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M31.2 9.5 19.3 16.4a7.2 7.2 0 0 0-3.6 6.2v2.8a7.2 7.2 0 0 0 3.6 6.2l11.9 6.9a6.1 6.1 0 0 0 9.2-5.3V14.8a6.1 6.1 0 0 0-9.2-5.3Z" stroke="currentColor" stroke-width="2.5"/>
+            <path d="m23.7 18.6-5.2 3a3.8 3.8 0 0 0 0 6.6l5.2 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M27.2 20.5v9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>CathodeOS</span>
+      </a>
+      <div class="nav-links">
+        <a href="#why">Why Cathode</a>
+        <a href="#features">Features</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="https://github.com/Jackson4Rocks/CathodeROM" target="_blank" rel="noreferrer">Source</a>
+      </div>
+      <a class="nav-cta" href="#status">Explore <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> ANDROID 16 · x86_64 · microG</div>
+        <h1>Android,<br><em>rewired for PCs.</em></h1>
+        <p class="hero-lead">CathodeOS brings the AOSP experience to laptops and desktops with a clean PC-focused foundation, original visual identity, and a FOSS-first service layer.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/Jackson4Rocks/CathodeROM" target="_blank" rel="noreferrer">Explore the source <span>↗</span></a>
+          <a class="button button-ghost" href="#roadmap">See the roadmap</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>16.0.0</strong><small>AOSP base</small></span>
+          <span><strong>x86_64</strong><small>PC architecture</small></span>
+          <span><strong>microG</strong><small>FOSS services</small></span>
+        </div>
+      </div>
+
+      <div class="device-stage reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="device-glow"></div>
+        <div class="laptop">
+          <div class="screen">
+            <div class="screen-top"><span>9:41</span><span>100%</span></div>
+            <div class="screen-center">
+              <div class="mini-mark">
+                <svg viewBox="0 0 48 48" fill="none">
+                  <path d="M31.2 9.5 19.3 16.4a7.2 7.2 0 0 0-3.6 6.2v2.8a7.2 7.2 0 0 0 3.6 6.2l11.9 6.9a6.1 6.1 0 0 0 9.2-5.3V14.8a6.1 6.1 0 0 0-9.2-5.3Z" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="m23.7 18.6-5.2 3a3.8 3.8 0 0 0 0 6.6l5.2 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                  <path d="M27.2 20.5v9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span>CathodeOS</span>
+              <small>Simple. Powerful. Yours.</small>
+            </div>
+            <div class="dock">
+              <span class="dock-icon i-one"></span>
+              <span class="dock-icon i-two"></span>
+              <span class="dock-icon i-three"></span>
+              <span class="dock-icon i-four"></span>
+              <span class="dock-icon i-five"></span>
+            </div>
+          </div>
+          <div class="keyboard">
+            <div class="keyboard-row"></div>
+            <div class="keyboard-row short"></div>
+            <div class="trackpad"></div>
+          </div>
+        </div>
+        <div class="floating-card">
+          <span class="card-label">SYSTEM</span>
+          <strong>Online.</strong>
+          <span class="card-sub">CathodeOS + microG</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="CathodeOS highlights">
+      <div class="marquee-track">
+        <span>AOSP FIRST</span><i></i><span>PC FOCUSED</span><i></i><span>FOSS SERVICES</span><i></i>
+        <span>AOSP FIRST</span><i></i><span>PC FOCUSED</span><i></i><span>FOSS SERVICES</span><i></i>
+      </div>
+    </section>
+
+    <section class="section shell" id="why">
+      <div class="section-heading reveal">
+        <p class="section-kicker">01 / THE IDEA</p>
+        <h2>Android that feels<br><em>at home on a laptop.</em></h2>
+        <p>CathodeOS keeps Android recognizable while rethinking the pieces that matter on a full-size keyboard, touchpad, big display, and UEFI PC.</p>
+      </div>
+      <div class="feature-grid" id="features">
+        <article class="feature-card reveal">
+          <div class="feature-number">01</div>
+          <div class="feature-icon icon-a">⌁</div>
+          <h3>AOSP at the core</h3>
+          <p>Start from a clean Android 16 base instead of hiding the platform behind layers of proprietary customization.</p>
+        </article>
+        <article class="feature-card feature-card-bright reveal">
+          <div class="feature-number">02</div>
+          <div class="feature-icon icon-b">◈</div>
+          <h3>Built for x86_64</h3>
+          <p>A dedicated PC-oriented device layer is the foundation for boot, graphics, audio, Wi-Fi, power, and laptop hardware.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-number">03</div>
+          <div class="feature-icon icon-c">✦</div>
+          <h3>FOSS services</h3>
+          <p>CathodeOS uses microG as its open-source Google API compatibility layer instead of bundling proprietary GMS.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-number">04</div>
+          <div class="feature-icon icon-d">⊙</div>
+          <h3>Its own visual language</h3>
+          <p>Original geometric icons, CathodeOS color tokens, custom wallpapers, boot animation, and a distinct identity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-section shell">
+      <div class="visual-card reveal">
+        <div class="visual-copy">
+          <p class="section-kicker">02 / THE LOOK</p>
+          <h2>Soft light.<br><em>Hard edges.</em></h2>
+          <p>The visual system pairs near-black surfaces with electric violet and cyan accents, subtle glass layers, and geometric shapes.</p>
+          <div class="palette">
+            <span style="--c:#08070d"></span>
+            <span style="--c:#171222"></span>
+            <span style="--c:#6c4cff"></span>
+            <span style="--c:#6edcff"></span>
+            <span style="--c:#e9e6ff"></span>
+          </div>
+        </div>
+        <div class="visual-stack">
+          <div class="stack-card stack-back"></div>
+          <div class="stack-card stack-mid"></div>
+          <div class="stack-card stack-front">
+            <div class="stack-header"><span>CathodeOS</span><small>About</small></div>
+            <div class="stack-mark">C</div>
+            <strong>CathodeOS</strong>
+            <span>Android 16 · x86_64</span>
+            <small>CathodeOS + microG</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="roadmap">
+      <div class="section-heading reveal">
+        <p class="section-kicker">03 / ROADMAP</p>
+        <h2>From source tree<br><em>to a real machine.</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item current reveal">
+          <span class="timeline-dot"></span>
+          <div><small>PHASE 0</small><h3>Source bring-up</h3><p>AOSP 16.0.0_r4, x86_64 product registration, microG integration, and CathodeOS branding.</p></div>
+          <b>NOW</b>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div><small>PHASE 1</small><h3>First PC boot</h3><p>PC kernel strategy, UEFI artifacts, initramfs, disk image, and QEMU validation.</p></div>
+          <b>01</b>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div><small>PHASE 2</small><h3>Hardware bring-up</h3><p>Graphics, Wi-Fi, Bluetooth, audio, touchpad, backlight, battery, suspend, and webcams.</p></div>
+          <b>02</b>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div><small>PHASE 3</small><h3>Laptop experience</h3><p>Windowing, keyboard shortcuts, power profiles, display hotplug, and external monitor support.</p></div>
+          <b>03</b>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell status-section" id="status">
+      <div class="status-panel reveal">
+        <div>
+          <p class="section-kicker">04 / RIGHT NOW</p>
+          <h2>Early. Experimental.<br><em>Very much alive.</em></h2>
+          <p>CathodeOS is in active bring-up. The source tree is being assembled now; the first milestone is a bootable x86_64 image before deeper laptop hardware tuning.</p>
+        </div>
+        <div class="status-side">
+          <span class="status-dot"></span>
+          <strong>BUILDING</strong>
+          <small>CathodeROM / main</small>
+          <a href="https://github.com/Jackson4Rocks/CathodeROM" target="_blank" rel="noreferrer">Open GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta shell reveal">
+      <div class="cta-mark">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path d="M31.2 9.5 19.3 16.4a7.2 7.2 0 0 0-3.6 6.2v2.8a7.2 7.2 0 0 0 3.6 6.2l11.9 6.9a6.1 6.1 0 0 0 9.2-5.3V14.8a6.1 6.1 0 0 0-9.2-5.3Z" stroke="currentColor" stroke-width="2.5"/>
+          <path d="m23.7 18.6-5.2 3a3.8 3.8 0 0 0 0 6.6l5.2 3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M27.2 20.5v9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <p class="section-kicker">CATHODEOS</p>
+        <h2>Android for the machines<br><em>you already own.</em></h2>
+      </div>
+      <a class="button button-primary" href="https://github.com/Jackson4Rocks/CathodeROM" target="_blank" rel="noreferrer">View the source <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© CathodeOS</span>
+    <span>AOSP-based · x86_64 · microG</span>
+    <a href="https://github.com/Jackson4Rocks/CathodeROM" target="_blank" rel="noreferrer">GitHub ↗</a>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
