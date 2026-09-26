@@ -7,4 +7,5 @@
            remote="github"
            revision="main"
            clone-depth="1" />
+  <project name="lineageos4microg/android_vendor_partner_gms" path="vendor/partner_gms" remote="github" revision="master" clone-depth="1" />
 </manifest>
