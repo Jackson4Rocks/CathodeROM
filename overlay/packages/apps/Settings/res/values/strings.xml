@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_settings">About CathodeOS</string>
+    <string name="about_settings_summary">CathodeOS + microG • Android 16 • x86_64</string>
+    <string name="cathodeos_about_tagline" translatable="false">Built for PCs. Based on AOSP.</string>
+    <string name="cathodeos_services_label" translatable="false">Services</string>
+    <string name="cathodeos_services_value" translatable="false">CathodeOS + microG</string>
+</resources>
