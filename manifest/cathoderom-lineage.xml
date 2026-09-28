@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="lineage" fetch="https://github.com/" />
+  <remote name="github" fetch="https://github.com/" />
+
+  <project name="Jackson4Rocks/CathodeROM"
+           path="device/cathoderom/laptop"
+           remote="github"
+           revision="main"
+           clone-depth="1" />
+
+  <project name="lineageos4microg/android_vendor_partner_gms"
+           path="vendor/partner_gms"
+           remote="github"
+           revision="master"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_device_pc_basic_x86_64_pc"
+           path="device/pc/basic_x86_64_pc"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_device_mainline_common"
+           path="device/mainline/common"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_kernel_mainline_configs"
+           path="kernel/mainline/configs"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_kernel_virt_virtio"
+           path="kernel/virt/virtio"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_prebuilts_bootmgr"
+           path="prebuilts/bootmgr"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_drm_hwcomposer-upstream"
+           path="external/drm_hwcomposer-upstream"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_libdisplay-info-upstream"
+           path="external/libdisplay-info-upstream"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_minigbm-upstream"
+           path="external/minigbm-upstream"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_linux-firmware-mainline"
+           path="external/linux-firmware-mainline"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_mesa"
+           path="external/mesa"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_prebuilts_mesa-build-dep"
+           path="prebuilts/mesa-build-dep"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_hardware_mainline_common"
+           path="hardware/mainline/common"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_vendor_mainline"
+           path="vendor/mainline"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+
+  <project name="LineageOS/android_external_tinyhal"
+           path="external/tinyhal"
+           remote="lineage"
+           revision="lineage-23.2"
+           clone-depth="1" />
+</manifest>
