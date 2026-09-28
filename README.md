@@ -16,6 +16,37 @@ This repository is in the bring-up stage.
 - Hardware bring-up: in progress
 - GPU/audio/Wi-Fi/suspend tuning: not yet complete
 
+## PC hardware profiles
+
+CathodeOS now has two x86_64 bring-up paths:
+
+- `cathoderom_x86_64`: the original AOSP/generic product used for userspace bring-up.
+- `cathoderom_pc_x86_64`: a separate LineageOS-based PC profile that consumes the current
+  LineageOS 23.2 minimal x86_64 PC hardware stack. This profile is intended to provide
+  the initial PC kernel/ramdisk/filesystem/GRUB plumbing without requiring CathodeOS to
+  reimplement the low-level PC layer.
+
+The Lineage profile is synced into a separate `lineage/` checkout so the working AOSP tree
+is not destroyed or converted in place.
+
+To prepare it:
+
+```bash
+bash ./tools/bootstrap-lineage.sh
+```
+
+Then build from the Lineage checkout with:
+
+```bash
+cd lineage
+source build/envsetup.sh
+lunch cathoderom_pc_x86_64 trunk_staging userdebug
+TMPDIR="$PWD/.tmp" m -j1
+```
+
+The initial PC profile uses LineageOS's minimal x86_64 PC path and its virtio kernel mode.
+The broader mainline/generic hardware profile remains the next hardware-expansion step.
+
 ## Build model
 
 The repository is intentionally small. AOSP itself is fetched by Repo, while this repository supplies CathodeOS-specific files through a local manifest.
